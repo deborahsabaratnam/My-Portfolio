@@ -1,161 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deborah Sabaratnam | Software Developer | Data Analyst</title>
+    <meta name="description"
+        content="Deborah Studios — Software development, creative technology and digital experiences.">
+    <title>Deborah Studios | Software Developer</title>
+    <link rel="icon" type="image/png" href="favicon.png?v=2">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
 </head>
+
 <body>
 
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+    <header class="site-header">
+        <a href="index.html" class="brand">deborah studios.</a>
+
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="services.html">Services</a>
         </nav>
+
+        <!-- Mobile Navigation -->
+        <details class="mobile-nav">
+            <summary class="mobile-menu-button" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </summary>
+
+            <nav class="mobile-nav-links" aria-label="Mobile navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="work.html">Work</a>
+                <a href="services.html">Services</a>
+            </nav>
+        </details>
+
+        <details class="contact-menu">
+            <summary class="contact-button">Hit me up ↗</summary>
+
+            <div class="contact-dropdown">
+                <a href="https://www.linkedin.com/in/deborah-sabaratnam/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn ↗</a>
+
+                <a href="https://github.com/deborahsabaratnam" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sabaratnamdeborah%40gmail.com" target="_blank"
+                    rel="noopener noreferrer">Email ↗</a>
+            </div>
+        </details>
     </header>
 
     <main>
-        <section id="home">
-            <p class="greeting"> HELLO! WELCOME TO MY PORTFOLIO. 
-            </p>
-            <h2>Hi! I'm Deborah Sabaratnam
-            </h2>
-            <h3>
-                Aspiring Software Developer
-            </h3>
-            <p class="intro">
-                I build practical software solutions using Java, Python, and web technologies. 
-                I enjoy turning ideas into functional applications.  
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects">View my works</a>
-                <a href="#contact" class="secondary-btn">Contact Me</a>
-            </div>
-        </section>
+        <section class="hero">
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-container">
-            <div class="skill-card">
-            <h3>
-                Programming Languages
-            </h3>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-            </ul>
-            </div>
-            <div class="skill-card">
-            <h3>
-                Web development
-            </h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-            </div>
-            <div class="skill-card">
-            <h3>
-                Mobile App Development
-            </h3>
-            <ul>
-                <li>Flutter (Basics)</li>
-            </ul>
-            </div>
-            <div class="skill-card">
-            <h3>
-                Data Analytics & Visualization
-            </h3>
-            <ul>
-                <li>Power BI</li>
-            </ul>
-            </div>
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    WEB & MOBILE DEVELOPER
+                </p>
 
-            </div>
+                <h1>Hi, I'm <span>Deborah.</span></h1>
 
-        </section>
-        
-        <section id="projects">
-            <h2>My Projects</h2>
-            <p>Here are some projects I have worked on</p>
-            <div class="project-container">
-                <div class="project-card">
-                    <h3>
-                        Hospital Emergency Management System
-                    </h3>
-                    <p>
-                        A Java-based application that manages patient
-                        records, emergency queues, and treatment priorities
-                        using data structures.
-                    </p>
-                    <p class="tech">
-                        Java | Data Structures
-                    </p>
-                    <a href = '#' class="project-link">
-                        View Project
-                    </a>
-                </div>
-                <div class="project-card">
-                    <h3>
-                        Student Performance Dashboard
-                    </h3>
-                    <p>
-                        An interactive dashboard developed using Python
-                        and Streamlit to visualize student marks,
-                        attendance, and performance statistics.
-                    </p>
-                    <p class="tech">
-                        Python | Streamlit | Pandas
-                    </p>
-                    <a href="#" class="project-link">
-                        View Project
-                    </a>
-                </div>
-                <div class="project-card">
-                    <h3>
-                        Trendify - Mobile Application
-                    </h3>
-                    <p>
-                        A mobile application developed using Flutter
-                        and Firebase, demonstrating mobile application
-                        development and backend integration.
-                    </p>
-                    <p class="tech">
-                        Flutter | Firebase
-                    </p>
-                    <a href="https://github.com/deborahsabaratnam/Mobile-Software-Development-project---Trendify" class="Project Link" target=_blank rel="noopener noreferrer">
-                        View Project
-                    </a>
-                </div>
-            </div>
-        </section>
+                <p class="hero-description">
+                    I build thoughtful digital experiences,
+                    combining creative ideas with functional code.
+                </p>
 
-        <section id="contact">
-            <h2>Let's work together</h2>
-            <p>Have a project in mind? I'd love to hear about it.</p>
-            <div class="contact-link">
-                <a href="mailto:sabaratnamdeborah@gmail.com">
-                    Email Me
-                </a>
-                <a href="https://www.linkedin.com/in/deborah-sabaratnam/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
-                </a>
-                <a href="https://github.com/deborahsabaratnam" target="_blank" rel="noopener noreferrer">
-                    GitHub
+                <a href="about.html" class="hero-cta">
+                    Dig into my world <span aria-hidden="true">↗</span>
                 </a>
             </div>
+
+            <div class="hero-mosaic" aria-label="Creative technology image collage">
+                <div class="mosaic-item mosaic-one">
+                    <img src="images/workspace2.webp" alt="Software development workspace">
+                </div>
+
+                <div class="mosaic-item mosaic-two">
+                    <img src="images/code.webp" alt="Programming code on a screen">
+                </div>
+
+                <div class="mosaic-item mosaic-three">
+                    <img src="images/digital-tech.webp" alt="Abstract digital technology artwork">
+                </div>
+
+                <div class="mosaic-item mosaic-four">
+                    <img src="images/digital-interface.webp" alt="Digital interface design">
+                </div>
+            </div>
+
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Deborah Sabaratnam. All rights reserved.</p>
+    <footer class="site-footer">
+        <p>© 2026 Deborah Studios. All rights reserved.</p>
+        <p>Designed & developed by Deborah Sabaratnam.</p>
     </footer>
 
 </body>
+
 </html>
